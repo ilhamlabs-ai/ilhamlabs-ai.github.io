@@ -42,4 +42,4 @@ We welcome contributions to improve the website. Feel free to submit issues or p
 
 ---
 
-Visit us at [ilhamlabs.ai](https://ilhamlabs.ai) | Follow on [GitHub](https://github.com/ilhamlabs-ai)
+Visit us at [ilhamlabs-ai.github.io](https://ilhamlabs-ai.github.io) | Follow on [GitHub](https://github.com/ilhamlabs-ai)
