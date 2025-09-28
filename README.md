@@ -36,4 +36,9 @@ We welcome contributions to improve the website. Feel free to submit issues or p
 
 ---
 
-Visit us at [ilhamlabs-ai.github.io](https://ilhamlabs-ai.github.io) | Follow on [GitHub](https://github.com/ilhamlabs-ai)
+**Connect with us:**
+- 🌐 Website: [ilhamlabs-ai.github.io](https://ilhamlabs-ai.github.io/)
+- 📧 Email: [ilhamlabs.ai@proton.me](mailto:ilhamlabs.ai@proton.me)
+- 💼 LinkedIn: [linkedin.com/company/ilham-labs-ai](https://www.linkedin.com/company/ilham-labs-ai)
+- � Instagram: [instagram.com/ilhamlabs.ai](https://www.instagram.com/ilhamlabs.ai/)
+- �🐙 GitHub: [github.com/ilhamlabs-ai](https://github.com/ilhamlabs-ai)
