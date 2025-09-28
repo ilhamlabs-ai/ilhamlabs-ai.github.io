@@ -12,12 +12,6 @@ IlhamLabs.ai explores AI's evolving intelligence through:
 - 📊 Model Comparison Platform
 - 🛠️ Open Source SDKs
 
-## Quick Start
-
-1. Clone the repository
-2. Open `index.html` in your web browser
-3. That's it! The website is ready to view locally
-
 ## Features
 
 - Modern responsive design
