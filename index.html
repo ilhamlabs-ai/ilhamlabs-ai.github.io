@@ -58,7 +58,7 @@
             position: fixed;
             top: 0;
             width: 100%;
-            background: rgba(10, 10, 15, 0.9);
+            background: #1a1d23;
             backdrop-filter: blur(20px);
             border-bottom: 1px solid rgba(120, 219, 255, 0.2);
             z-index: 1000;
@@ -94,6 +94,7 @@
             background-position: center;
             position: relative;
             overflow: hidden;
+            flex-shrink: 0;
         }
 
         .logo-icon::before {
@@ -129,6 +130,110 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
+        }
+
+        /* Mobile Menu */
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: #e2e8f0;
+            cursor: pointer;
+            padding: 0.5rem;
+            z-index: 1001;
+        }
+
+        .hamburger {
+            display: flex;
+            flex-direction: column;
+            width: 25px;
+            height: 20px;
+            justify-content: space-between;
+        }
+
+        .hamburger span {
+            width: 100%;
+            height: 3px;
+            background: linear-gradient(135deg, #78dbff, #ff77c6);
+            border-radius: 2px;
+            transition: all 0.3s ease;
+            transform-origin: center;
+        }
+
+        .hamburger.active span:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 5px);
+        }
+
+        .hamburger.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .hamburger.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(7px, -6px);
+        }
+
+        .mobile-nav {
+            display: none;
+            background: #1a1d23;
+            backdrop-filter: blur(20px);
+            border-top: 1px solid rgba(120, 219, 255, 0.2);
+            padding: 0.5rem 0;
+            width: 100%;
+        }
+
+        .mobile-nav.active {
+            display: block;
+        }
+
+        .mobile-nav-links {
+            display: flex;
+            flex-direction: column;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .mobile-nav-links li {
+            text-align: center;
+            border-bottom: 1px solid rgba(120, 219, 255, 0.1);
+        }
+
+        .mobile-nav-links li:last-child {
+            border-bottom: none;
+        }
+
+        .mobile-nav-links a {
+            color: #cbd5e1;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1rem;
+            padding: 0.75rem 1rem;
+            display: block;
+            transition: all 0.3s ease;
+        }
+
+        .mobile-nav-links a:hover {
+            background: linear-gradient(135deg, #78dbff, #ff77c6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        /* Mobile touch improvements */
+        @media (hover: none) and (pointer: coarse) {
+            .btn:hover {
+                transform: none;
+                box-shadow: 0 5px 15px rgba(120, 219, 255, 0.2);
+            }
+
+            .feature-card:hover {
+                transform: none;
+            }
+
+            .research-item:hover {
+                transform: none;
+            }
         }
 
         /* Hero Section */
@@ -564,27 +669,174 @@
         }
 
         /* Responsive Design */
+        @media (max-width: 1024px) {
+            .container {
+                padding: 0 15px;
+            }
+
+            .features-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1.5rem;
+            }
+
+            .research-content {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .community-stats {
+                grid-template-columns: repeat(4, 1fr);
+            }
+
+            .enterprise-features {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
         @media (max-width: 768px) {
             .nav-links {
                 display: none;
             }
 
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            nav {
+                padding: 0.75rem 0;
+            }
+
+            .container {
+                padding: 0 20px;
+            }
+
+            section {
+                padding: 3rem 0;
+            }
+
+            .hero {
+                padding-top: 100px;
+                min-height: 80vh;
+                text-align: center;
+            }
+
             .hero h1 {
                 font-size: 2.5rem;
+                margin-bottom: 1.5rem;
             }
 
             .hero .tagline {
                 font-size: 1.2rem;
+                margin-bottom: 1.5rem;
+            }
+
+            .hero .mission {
+                font-size: 1rem;
+                margin-bottom: 2rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+                margin-bottom: 2rem;
             }
 
             .cta-buttons {
                 flex-direction: column;
                 align-items: center;
+                gap: 0.75rem;
             }
 
             .btn {
                 width: 100%;
+                max-width: 280px;
                 text-align: center;
+                padding: 0.875rem 1.5rem;
+            }
+
+            .features-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .research-content {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .community-stats {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1rem;
+            }
+
+            .enterprise-features {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+
+            .footer-content {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1.5rem;
+                text-align: center;
+            }
+
+            .footer-bottom p {
+                font-size: 0.8rem;
+                line-height: 1.5;
+            }
+
+            .footer-bottom a {
+                display: inline-block;
+                margin: 0.25rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 15px;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero .tagline {
+                font-size: 1.1rem;
+            }
+
+            .hero .mission {
+                font-size: 0.95rem;
+            }
+
+            .section-title {
+                font-size: 1.75rem;
+            }
+
+            .feature-card, .research-item {
+                padding: 1.5rem;
+            }
+
+            .community-stats {
+                grid-template-columns: 1fr;
+            }
+
+            .stat-number {
+                font-size: 2rem;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-bottom {
+                text-align: left;
+            }
+
+            .footer-bottom p {
+                font-size: 0.75rem;
+            }
+
+            .btn {
+                padding: 0.75rem 1.25rem;
+                font-size: 0.9rem;
             }
         }
 
@@ -745,7 +997,23 @@
                 <li><a href="#enterprise">Enterprise</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
         </nav>
+        <div class="mobile-nav container" id="mobileNav">
+            <ul class="mobile-nav-links">
+                <li><a href="#what-we-do">Tools</a></li>
+                <li><a href="#research">Research</a></li>
+                <li><a href="#community">Community</a></li>
+                <li><a href="#enterprise">Enterprise</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
     </header>
 
     <!-- Hero Section -->
@@ -1040,9 +1308,35 @@
         window.addEventListener('scroll', () => {
             const header = document.querySelector('header');
             if (window.scrollY > 100) {
-                header.style.background = 'rgba(10, 10, 15, 0.95)';
+                header.style.background = '#1a1d23';
             } else {
-                header.style.background = 'rgba(10, 10, 15, 0.9)';
+                header.style.background = '#1a1d23';
+            }
+        });
+
+        // Mobile menu functionality
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileNav = document.getElementById('mobileNav');
+        const hamburger = document.getElementById('hamburger');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileNav.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.mobile-nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileNav.classList.remove('active');
+                hamburger.classList.remove('active');
+            });
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!mobileMenuBtn.contains(e.target) && !mobileNav.contains(e.target)) {
+                mobileNav.classList.remove('active');
+                hamburger.classList.remove('active');
             }
         });
 
