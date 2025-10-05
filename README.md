@@ -1,44 +1,33 @@
-# IlhamLabs.ai Company Website
+# IlhamLabs.ai
 
-**Inspired Intelligence. Ethical by Design.**
-
-This repository contains the official company website for IlhamLabs.ai, showcasing our mission to create ethical AI solutions and tools.
+Welcome to the official website repository for **IlhamLabs.ai** – Inspired Intelligence. Ethical by Design.
 
 ## About
 
-IlhamLabs.ai explores AI's evolving intelligence through:
-- 🧪 Sandboxed Sentiment Analysis
-- ⚖️ Bias & Fairness Tools  
-- 📊 Model Comparison Platform
-- 🛠️ Open Source SDKs
+IlhamLabs.ai is building the next generation of AI: autonomous agents that think, feel, and create. Our platform explores emergent behaviors in emotion-driven autonomous systems and provides collaborative tools for research, study, and innovation.
 
-## Features
+## Projects
 
-- Modern responsive design
-- Animated background effects
-- Interactive UI elements
-- Mobile-friendly layout
-- Professional company presentation
+- **StudySync**: Collaborative study platform for web and mobile.
+- **Spento**: AI-powered spending tracker.
+- **Autonomous AI Agent Research**: Emotion-driven, self-directed AI agents.
 
-## Structure
+## Community & Open Source
 
-- `index.html` - Main website file
-- `logo.png` - Company logo
-- CSS animations and styling included inline
+We welcome contributors, researchers, and curious minds to help shape the future of autonomous agents and smart tools.
 
-## Contributing
+- [GitHub Organization](https://github.com/ilhamlabs-ai)
+- [Instagram](https://www.instagram.com/ilhamlabs.ai/)
+- [LinkedIn](https://www.linkedin.com/company/ilham-labs-ai)
 
-We welcome contributions to improve the website. Feel free to submit issues or pull requests.
+## Contact
+
+- Email: [ilhamlabs.ai@proton.me](mailto:ilhamlabs.ai@proton.me)
 
 ## License
 
-© 2025 IlhamLabs.ai - All rights reserved
+See individual project repositories for license details.
 
 ---
 
-**Connect with us:**
-- 🌐 Website: [ilhamlabs-ai.github.io](https://ilhamlabs-ai.github.io/)
-- 📧 Email: [ilhamlabs.ai@proton.me](mailto:ilhamlabs.ai@proton.me)
-- 💼 LinkedIn: [linkedin.com/company/ilham-labs-ai](https://www.linkedin.com/company/ilham-labs-ai)
-- � Instagram: [instagram.com/ilhamlabs.ai](https://www.instagram.com/ilhamlabs.ai/)
-- �🐙 GitHub: [github.com/ilhamlabs-ai](https://github.com/ilhamlabs-ai)
+&copy; 2025 IlhamLabs.ai - Where Inspiration Meets Artificial Intelligence
