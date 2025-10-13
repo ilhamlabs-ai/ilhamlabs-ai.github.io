@@ -12,6 +12,7 @@ IlhamLabs.ai is building the next generation of AI: autonomous agents that think
 - **Spento**: AI-powered spending tracker.
 - **Autonomous AI Agent Research**: Emotion-driven, self-directed AI agents.
 
+
 ## Community & Open Source
 
 We welcome contributors, researchers, and curious minds to help shape the future of autonomous agents and smart tools.
@@ -24,9 +25,7 @@ We welcome contributors, researchers, and curious minds to help shape the future
 
 - Email: [ilhamlabs.ai@proton.me](mailto:ilhamlabs.ai@proton.me)
 
-## License
 
-See individual project repositories for license details.
 
 ---
 
