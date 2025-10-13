@@ -25,7 +25,9 @@ We welcome contributors, researchers, and curious minds to help shape the future
 
 - Email: [ilhamlabs.ai@proton.me](mailto:ilhamlabs.ai@proton.me)
 
+## License
 
+See individual project repositories for license details.
 
 ---
 
